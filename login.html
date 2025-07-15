@@ -4,16 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NE</title>
+    <title>login page</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        function Signin() {
+            name = prompt("Enter your Name")
+
+            if (name === !/^[A-Za-z]+$/) {
+                alert("this fild not be empty")
+            }
+            else if
+                (!/^[A-Za-z]+$/.test(name)) {
+                alert("not blank")
+            }
+        }
+    </script>
 
 </head>
 
-<body class="container">
+<body class="container mt-5 ">
     <div class="container-fluid">
-        Login
+        <form class="border border-2 justify-content-center ">
+            <h3 class="text-center"> Register Form</h3>
+            <div class="text-center">
+                <button onclick="Signin()" class="rounded-5 text-white bg-primary">Sign in <span
+                        class="bi-pencil-fill"></span></button>
+                <button onclick="Signup()" class="rounded-5 text-white bg-success">Sign up <span
+                        class="bi-fingerprint"></span></button>
+
+            </div>
+
+            <div class="mt-5 ms-5">
+                <dt class="">Name</dt>
+
+                <div class="input-group mt-2">
+                    <span class="bi bi-person-circle input-group-text bg-warning"></span>
+                    <input placeholder="Devid" class="input-group-text">
+
+                </div>
+
+            </div>
+            <div class="mt-5 ms-5">
+                <dt class="">Mob no.</dt>
+
+                <div class="input-group mt-2">
+                    <span class="bi bi-person-circle input-group-text bg-success"></span>
+                    <input placeholder="987654321" class="input-group-text">
+
+                </div>
+
+            </div>
+            <div class="mt-5 ms-5">
+                <dt class="">Password</dt>
+
+                <div class="input-group mt-2">
+                    <span class="bi bi-person-circle input-group-text bg-danger"></span>
+                    <input placeholder="abc@123" class="input-group-text">
+
+                </div>
+
+            </div>
+            <div class="mt-5 ms-5">
+                <dt class="">Email id</dt>
+
+                <div class="input-group mt-2">
+                    <span class="bi bi-person-circle input-group-text bg-warning"></span>
+                    <input placeholder="abc@gmail.com" class="input-group-text">
+
+                </div>
+
+            </div>
+        </form>
 
     </div>
 
